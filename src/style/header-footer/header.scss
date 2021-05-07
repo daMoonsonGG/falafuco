@@ -1,0 +1,48 @@
+.header {
+  grid-column: -1/1;
+  height: 80px;
+  grid-row: header-s/header-e;
+  grid-template-rows: [s] [e];
+  display: grid;
+  &__left-side {
+    cursor: pointer;
+    grid-row: s/e;
+    display: grid;
+    grid-template-rows: [s] [e];
+    grid-template-columns: 56px [logo-s] 65px [logo-e title-s] 165px [title-e];
+    &__logo {
+      grid-row: s/e;
+      grid-column: logo-s/logo-e;
+      img {
+        height: 54px;
+        width: 45px;
+      }
+    }
+    &__name {
+      cursor: pointer;
+      grid-column: title-s/title-e;
+      grid-row: s/e;
+      font-size: 36px;
+      font-family: "Roboto Slab", serif;
+    }
+  }
+  &__right-side {
+    justify-self: end;
+    margin-right: 180px;
+    width: 340px;
+    grid-row: s/e;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    color: $maincolor;
+    display: grid;
+    grid-auto-flow: column;
+
+    a {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
