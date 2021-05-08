@@ -1,7 +1,12 @@
 $maincolor: #35b487;
+$textcolor: #1d1d35;
+$background: #f2f2f2;
+
 html {
   font-size: 80%; // 1rem is 10px
   margin: 0px;
+  color: $textcolor;
+  font-family: "montserrat";
 }
 
 *,
@@ -10,7 +15,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "montserrat";
 }
 
 body {
@@ -25,4 +29,13 @@ body {
 
 @import "app.scss";
 
+@import "./white-btn.scss";
+@import "./green-btn.scss";
+
 @import "./header-footer/header.scss";
+@import "./header-footer/footer.scss";
+
+@import "./landing-page/video-frame.scss";
+@import "./landing-page/presentation.scss";
+@import "./landing-page/services.scss";
+@import "./landing-page/questions.scss";

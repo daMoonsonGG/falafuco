@@ -1,0 +1,23 @@
+.presentation {
+  width: 100vw;
+  grid-row: presentation-s/presentation-e;
+  display: grid;
+  justify-items: center;
+  &__text-group {
+    width: 900px;
+    height: 600px;
+    font-size: 15px;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: [title-s] 35px [title-e middle-s] 40px [middle-e last-s] 40px [last-e];
+    grid-row-gap: 45px;
+
+    &__title {
+      font-size: 34px;
+      color: $maincolor;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

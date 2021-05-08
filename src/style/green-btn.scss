@@ -1,0 +1,17 @@
+.green-btn {
+  button {
+    font-size: 18px;
+    color: white;
+    border: 1.5px solid $maincolor;
+    background-color: $maincolor;
+    border-radius: 6px;
+    height: 55px;
+    width: 145px;
+    transition: 0.3s ease;
+    &:hover {
+      color: $maincolor;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+}

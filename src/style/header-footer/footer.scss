@@ -1,0 +1,36 @@
+.footer {
+  width: 100vw;
+  font-size: 15px;
+  color: $maincolor;
+  grid-row: footer-s/footer-e;
+  display: grid;
+  grid-row-gap: 45px;
+  &__line,
+  &__bottom {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  &__line {
+    border-bottom: 2px solid $textcolor;
+  }
+  &__bottom {
+    display: grid;
+    grid-auto-flow: column;
+    &__right-side {
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: 20px;
+      justify-self: end;
+      span {
+        margin-top: 3px;
+      }
+      a {
+        font-size: 22px;
+        color: $maincolor;
+        &:hover {
+          color: $textcolor;
+        }
+      }
+    }
+  }
+}

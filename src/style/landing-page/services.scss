@@ -1,0 +1,46 @@
+.services {
+  width: 100vw;
+  background-color: $background;
+  grid-row: services-s/services-e;
+  display: grid;
+  grid-template-rows: 80px [title-s] 175px [title-e group-s] 1fr [group-e];
+
+  &__title {
+    margin-left: 200px;
+    grid-row: title-s/title-e;
+    font-size: 34px;
+    width: 550px;
+    line-height: 45px;
+    color: $maincolor;
+  }
+  &__group {
+    grid-row: group-s/group-e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    justify-items: center;
+    grid-row-gap: 80px;
+    &__service {
+      width: 550px;
+      display: grid;
+      grid-row-gap: 25px;
+      &__title {
+        align-items: center;
+        height: 70px;
+        font-size: 17px;
+        display: grid;
+        grid-auto-flow: column;
+        i {
+          justify-self: end;
+          font-size: 56px;
+        }
+        .fa-thumbs-up {
+          margin-top: -15px;
+        }
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+}

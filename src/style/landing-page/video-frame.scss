@@ -1,0 +1,16 @@
+.video-frame {
+  height: 960px;
+  grid-row: video-frame-s/video-frame-e;
+  &__over-video {
+    width: 515px;
+    margin-left: 100px;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 30px;
+    &__slogan {
+      font-size: 48px;
+      height: 120px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.btn {
+  button {
+    font-size: 18px;
+    color: $maincolor;
+    border: 1.5px solid $maincolor;
+    background-color: white;
+    border-radius: 6px;
+    height: 55px;
+    width: 145px;
+    transition: 0.3s ease;
+    &:hover {
+      color: white;
+      cursor: pointer;
+      background-color: $maincolor;
+    }
+  }
+}

@@ -3,6 +3,7 @@
   height: 80px;
   grid-row: header-s/header-e;
   grid-template-rows: [s] [e];
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.17);
   display: grid;
   &__left-side {
     cursor: pointer;
