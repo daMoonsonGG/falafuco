@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: [header-s] 60px [header-e video-frame-s] 600px [video-frame-e presentation-s] 600px [presentation-e services-s] 780px [services-e plans-s] 800px [plans-e questions-s] 300px [questions-e footer-s] 250px [footer-e];
+  grid-template-rows: [header-s] 60px [header-e content-s] 1fr [content-e footer-s] 250px [footer-e];
   grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
   @media screen and (max-width: 800px) {
     grid-template-columns: [s] 1fr [e];
