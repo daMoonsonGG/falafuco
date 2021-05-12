@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import history from "../history";
 
-import Plan from "./landing-page/plan";
 import GreenButton from "./green-btn";
 
 class PlansPage extends Component {
@@ -22,29 +21,7 @@ class PlansPage extends Component {
             magna. Morbi nec tempor enim, id vestibulum lectus.{" "}
           </span>
         </div>
-        <div className="plans-page__group">
-          <Plan
-            className="plans-page__group__plan-option non-featured"
-            img="http://via.placeholder.com/350x220"
-            title="Opción 1"
-            textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-            textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-          />
-          <Plan
-            className="plans-page__group__plan-option featured"
-            img="http://via.placeholder.com/400x264"
-            title="Opción 2"
-            textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-            textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-          />
-          <Plan
-            className="plans-page__group__plan-option non-featured"
-            img="http://via.placeholder.com/350x220"
-            title="Opción 3"
-            textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-            textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
-          />
-        </div>
+        <div className="plans-page__group"></div>
         <GreenButton
           className="plans-page__btn"
           text="Consúltanos"

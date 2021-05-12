@@ -1,0 +1,50 @@
+.contact {
+  width: 100vw;
+  background-color: $background;
+  grid-row: content-s/content-e;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e bottom-s] 680px [bottom-e btn-s] 60px [btn-e] 80px;
+  &__top {
+    grid-row: title-s/text-e;
+    text-align: center;
+    &__title {
+      grid-row: title-s/title-e;
+      color: $maincolor;
+      text-decoration: underline;
+      font-size: 34px;
+    }
+    &__text {
+      margin-top: 20px;
+      grid-row: text-s/text-e;
+      font-size: 15px;
+    }
+  }
+  &__bottom {
+    width: 100vw;
+    justify-items: center;
+    grid-row: bottom-s/bottom-e;
+    display: grid;
+    grid-auto-flow: column;
+    &__information {
+      text-align: center;
+      border-right: 2px solid $maincolor;
+      width: 300px;
+      height: 300px;
+      color: $maincolor;
+      font-size: 20px;
+      display: grid;
+
+      .fas,
+      .far {
+        align-self: center;
+        font-size: 28px;
+        margin-right: 20px;
+        margin-top: 50px;
+      }
+      &__form {
+        z-index: 0;
+      }
+    }
+  }
+}

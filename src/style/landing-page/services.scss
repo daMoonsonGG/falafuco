@@ -3,13 +3,13 @@
   background-color: $background;
   grid-row: services-s/services-e;
   display: grid;
-  grid-template-rows: 80px [title-s] 175px [title-e group-s] 1fr [group-e];
+  grid-template-rows: 80px [title-s] 130px [title-e group-s] 1fr [group-e];
 
   &__title {
-    margin-left: 200px;
+    margin-left: 600px;
     grid-row: title-s/title-e;
     font-size: 34px;
-    width: 550px;
+    width: 800px;
     line-height: 45px;
     color: $maincolor;
   }

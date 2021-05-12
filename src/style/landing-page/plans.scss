@@ -5,12 +5,11 @@
   &__header {
     grid-row: title-s/title-e;
     display: grid;
-    grid-auto-flow: column;
 
     &__title {
-      margin-left: 200px;
+      margin-left: 550px;
       font-size: 34px;
-      width: 550px;
+      width: 950px;
       line-height: 45px;
       color: $maincolor;
     }

@@ -1,9 +1,11 @@
 .plans-page {
+  z-index: -1;
   width: 100vw;
+  background-color: $background;
   grid-row: content-s/content-e;
   display: grid;
   justify-items: center;
-  grid-template-rows: 100px [title-s] 60px [title-e text-s] 160px [text-e group-s] 700px [group-e btn-s] 60px [btn-e];
+  grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e group-s] 700px [group-e btn-s] 60px [btn-e] 80px;
   &__title {
     grid-row: title-s/title-e;
     color: $maincolor;
@@ -20,7 +22,7 @@
   &__group {
     grid-row: group-s/group-e;
     justify-content: center;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     display: grid;
     grid-auto-flow: column;
 
