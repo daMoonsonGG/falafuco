@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import history from "../../history";
+
 import GreenButton from "../green-btn";
 
 class Questions extends Component {
@@ -14,7 +17,7 @@ class Questions extends Component {
         <GreenButton
           className="questions__btn"
           text="Contáctanos"
-          handleClick="#"
+          handleClick={() => history.push("/contacto")}
         />
       </div>
     );

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import history from "../../history";
+
 import Button from "../white-btn";
 
 class Videoframe extends Component {
@@ -16,7 +18,7 @@ class Videoframe extends Component {
           <Button
             className="video-frame__over-video__btn"
             text="Planes"
-            handleClick="#"
+            handleClick={() => history.push("/planes")}
           />
         </div>
       </div>

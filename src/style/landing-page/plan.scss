@@ -1,0 +1,31 @@
+.plan {
+  width: 350px;
+  height: 500px;
+  align-items: center;
+  border: 1px solid $textcolor;
+  box-shadow: -5px 7px 5px 0px rgba(70, 180, 135, 0.5);
+  border-radius: 4px;
+  &__img {
+    img {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+  &__text {
+    margin-top: -5px;
+    padding-bottom: 50px;
+    &__title {
+      font-family: "Roboto Slab";
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__description {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.plans {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 80px [title-s] 175px [title-e group-s] 1fr [group-e btn-s] 60px [btn-e] 70px;
+  &__header {
+    grid-row: title-s/title-e;
+    display: grid;
+    grid-auto-flow: column;
+
+    &__title {
+      margin-left: 200px;
+      font-size: 34px;
+      width: 550px;
+      line-height: 45px;
+      color: $maincolor;
+    }
+    &__slogan {
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+  &__plan-group {
+    grid-row: group-s/group-e;
+    justify-content: center;
+    grid-column-gap: 100px;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  &__btn {
+    justify-self: center;
+    grid-row: btn-s/btn-e;
+  }
+}

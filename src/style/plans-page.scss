@@ -1,0 +1,39 @@
+.plans-page {
+  width: 100vw;
+  grid-row: content-s/content-e;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 100px [title-s] 60px [title-e text-s] 160px [text-e group-s] 700px [group-e btn-s] 60px [btn-e];
+  &__title {
+    grid-row: title-s/title-e;
+    color: $maincolor;
+    text-decoration: underline;
+    font-size: 34px;
+  }
+  &__text {
+    margin-top: 20px;
+    width: 60%;
+    grid-row: text-s/text-e;
+    text-align: center;
+    font-size: 15px;
+  }
+  &__group {
+    grid-row: group-s/group-e;
+    justify-content: center;
+    grid-column-gap: 30px;
+    display: grid;
+    grid-auto-flow: column;
+
+    .non-featured {
+      margin-top: 50px;
+    }
+    .featured {
+      font-size: 18px !important;
+      width: 400px;
+      height: 600px;
+    }
+  }
+  &__btn {
+    grid-row: btn-s/btn-e;
+  }
+}

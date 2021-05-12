@@ -14,6 +14,7 @@ import history from "./history";
 
 import App from "./components/app";
 import Landing from "./components/landing-page/landing";
+import PlansPage from "./components/plans-page";
 
 function main() {
   ReactDOM.render(
@@ -22,6 +23,7 @@ function main() {
         <App>
           <Switch>
             <Route path="/" exact component={Landing} />
+            <Route path="/planes" exact component={PlansPage} />
           </Switch>
         </App>
       </Router>
