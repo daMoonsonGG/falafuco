@@ -4,7 +4,7 @@
   grid-row: content-s/content-e;
   display: grid;
   justify-items: center;
-  grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e bottom-s] 680px [bottom-e btn-s] 60px [btn-e] 80px;
+  grid-template-rows: 80px [title-s] 60px [title-e text-s] 80px [text-e bottom-s] 420px [bottom-e btn-s] 250px [btn-e];
   &__top {
     grid-row: title-s/text-e;
     text-align: center;
@@ -26,7 +26,10 @@
     grid-row: bottom-s/bottom-e;
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: [info-s] 800px [info-e form-s] 500px [form-e];
     &__information {
+      grid-column: info-s/info-e;
+      margin-top: 50px;
       text-align: center;
       border-right: 2px solid $maincolor;
       width: 300px;
@@ -43,6 +46,7 @@
         margin-top: 50px;
       }
       &__form {
+        grid-column: form-s/form-e;
         z-index: 0;
       }
     }

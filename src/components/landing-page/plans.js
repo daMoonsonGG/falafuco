@@ -21,21 +21,21 @@ class Plans extends Component {
         <div className="plans__plan-group">
           <Plan
             className="plans__plan-option"
-            img="http://via.placeholder.com/350x220"
+            img="https://i.imgur.com/ktsP8Q9.jpg"
             title="Opción 1"
             textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
             textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
           />
           <Plan
             className="plans__plan-option"
-            img="http://via.placeholder.com/350x220"
+            img="https://i.imgur.com/ktsP8Q9.jpg"
             title="Opción 2"
             textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
             textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
           />
           <Plan
             className="plans__plan-option"
-            img="http://via.placeholder.com/350x220"
+            img="https://i.imgur.com/ktsP8Q9.jpg"
             title="Opción 3"
             textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
             textTwo=" Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."

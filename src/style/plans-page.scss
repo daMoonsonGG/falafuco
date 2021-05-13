@@ -5,7 +5,7 @@
   grid-row: content-s/content-e;
   display: grid;
   justify-items: center;
-  grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e group-s] 700px [group-e btn-s] 60px [btn-e] 80px;
+  grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e group-s] 680px [group-e btn-s] 100px [btn-e] 80px;
   &__title {
     grid-row: title-s/title-e;
     color: $maincolor;
@@ -20,22 +20,56 @@
     font-size: 15px;
   }
   &__group {
+    font-size: 20px;
     grid-row: group-s/group-e;
     justify-content: center;
-    grid-column-gap: 10px;
     display: grid;
-    grid-auto-flow: column;
-
-    .non-featured {
-      margin-top: 50px;
+    &__plans-names {
+      padding-top: 30px;
+      height: 60px;
+      color: white;
+      background-color: $maincolor;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      margin-left: 241px;
+      text-align: center;
+      display: grid;
+      grid-auto-flow: column;
+      &__basic {
+        margin-left: 100px;
+      }
+      &__high {
+        margin-right: 20px;
+      }
     }
-    .featured {
-      font-size: 18px !important;
-      width: 400px;
+    &__features {
+      border: 2px solid $maincolor;
+      border-radius: 6px;
+      border-top-right-radius: 0px;
+      background-color: white;
       height: 600px;
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: 200px;
+      line-height: 95px;
+      i {
+        color: $maincolor;
+        font-size: 30px;
+      }
+      &__names {
+        color: white;
+        background-color: $maincolor;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      &__high {
+        margin-right: 105px;
+      }
     }
   }
   &__btn {
     grid-row: btn-s/btn-e;
+    margin-top: 50px;
   }
 }

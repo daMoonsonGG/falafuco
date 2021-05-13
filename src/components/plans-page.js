@@ -21,7 +21,91 @@ class PlansPage extends Component {
             magna. Morbi nec tempor enim, id vestibulum lectus.{" "}
           </span>
         </div>
-        <div className="plans-page__group"></div>
+        <div className="plans-page__group">
+          <div className="plans-page__group__plans-names">
+            <div className="plans-page__group__plans-names__basic">Básico</div>
+            <div className="plans-page__group__plans-names__medium">Medio</div>
+            <div className="plans-page__group__plans-names__high">Alto</div>
+          </div>
+          <div className="plans-page__group__features">
+            <div className="plans-page__group__features__names">
+              <div className="plans-page__group__names__feature-one">
+                Redes Sociales
+              </div>
+              <div className="plans-page__group__names__feature-two">Marca</div>
+              <div className="plans-page__group__names__feature-three">
+                Página Web
+              </div>
+              <div className="plans-page__group__names__feature-four">
+                Networking
+              </div>
+              <div className="plans-page__group__names__feature-five">
+                Visibilidad Local
+              </div>
+              <div className="plans-page__group__feature-six">Publicidad</div>
+            </div>
+            <div className="plans-page__group__features__basic">
+              <div className="plans-page__group__features__basic__feature-one">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__basic__feature-two">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__basic__feature-three">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__basic__feature-four">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__basic__feature-five">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__basic__feature-six">
+                <i className="far fa-check-circle"></i>
+              </div>
+            </div>
+            <div className="plans-page__group__features__medium">
+              <div className="plans-page__group__features__medium__feature-one">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__medium__feature-two">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__medium__feature-three">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__medium__feature-four">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__medium__feature-five">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__medium__feature-six">
+                <i className="far fa-check-circle"></i>
+              </div>
+            </div>
+            <div className="plans-page__group__features__high">
+              <div className="plans-page__group__features__high__feature-one">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__high__feature-two">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__high__feature-three">
+                <i className="far fa-check-circle"></i>
+              </div>
+              <div className="plans-page__group__features__high__feature-four">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__high__feature-five">
+                <i className="far fa-times-circle"></i>
+              </div>
+              <div className="plans-page__group__features__high__feature-six">
+                <i className="far fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
         <GreenButton
           className="plans-page__btn"
           text="Consúltanos"

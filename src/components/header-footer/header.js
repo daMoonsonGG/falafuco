@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 import history from "../../history";
 
@@ -20,7 +21,16 @@ class Header extends Component {
           </a>
         </div>
         <div className="header__right-side">
-          <a className="header__right-side__servicios">Servicios</a>
+          <Link
+            to="services"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+            className="header__right-side__servicios"
+            onClick={() => history.push("/")}
+          >
+            Servicios
+          </Link>
           <a
             className="header__right-side__planes"
             onClick={() => history.push("/planes")}

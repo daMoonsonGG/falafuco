@@ -22,11 +22,13 @@ import App from "./components/app";
 import Landing from "./components/landing-page/landing";
 import PlansPage from "./components/plans-page";
 import Contact from "./components/contact";
+import ScrollToTop from "./components/scroll-to-top";
 
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
+        <ScrollToTop />
         <App>
           <Switch>
             <Route path="/" exact component={Landing} />
