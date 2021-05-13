@@ -3,10 +3,6 @@ import React, { Component } from "react";
 import ContactForm from "./contact-form";
 
 class Contact extends Component {
-  onSubmit = (fields) => {
-    event.preventDefault();
-    console.log(fields);
-  };
   render() {
     return (
       <div className="contact">
@@ -31,6 +27,7 @@ class Contact extends Component {
           </div>
           <div className="contact__bottom__form">
             <ContactForm
+              id="myForm"
               className="contact__bottom__form__form"
               handleSubmit={this.onSubmit}
             />

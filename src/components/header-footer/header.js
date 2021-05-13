@@ -25,7 +25,7 @@ class Header extends Component {
             to="services"
             smooth={true}
             duration={1000}
-            offset={-100}
+            offset={-140}
             className="header__right-side__servicios"
             onClick={() => history.push("/")}
           >

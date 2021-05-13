@@ -35,6 +35,7 @@ class Plans extends Component {
           />
           <Plan
             className="plans__plan-option"
+            name="Color Pixie"
             img="https://i.imgur.com/ktsP8Q9.jpg"
             title="Opción 3"
             textOne="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
