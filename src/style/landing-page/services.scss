@@ -4,6 +4,9 @@
   grid-row: services-s/services-e;
   display: grid;
   grid-template-rows: 80px [title-s] 130px [title-e group-s] 1fr [group-e];
+  @media screen and (max-width: 1200px) {
+    grid-template-rows: 80px [title-s] 130px [title-e group-s] 1fr [group-e] 150px;
+  }
 
   &__title {
     margin-left: 600px;
@@ -12,6 +15,31 @@
     width: 800px;
     line-height: 45px;
     color: $maincolor;
+    @media screen and (max-width: 1400px) {
+      margin-left: 300px;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-left: 200px;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 850px) {
+      font-size: 20px;
+      margin-left: 100px;
+    }
+    @media screen and (max-width: 630px) {
+      width: 250px;
+      font-size: 16px;
+      text-align: center;
+      margin-left: 180px;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 120px;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: 20px;
+    }
   }
   &__group {
     grid-row: group-s/group-e;
@@ -20,6 +48,24 @@
     grid-template-rows: 150px 150px;
     justify-items: center;
     grid-row-gap: 80px;
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 850px) {
+      justify-items: start;
+      margin-left: 80px;
+    }
+    @media screen and (max-width: 630px) {
+      margin-left: 200px;
+      justify-items: center;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 140px;
+    }
+    @media screen and (max-width: 400px) {
+      margin-left: 40px;
+    }
+
     &__service {
       width: 550px;
       display: grid;
@@ -30,9 +76,26 @@
         font-size: 17px;
         display: grid;
         grid-auto-flow: column;
+        @media screen and (max-width: 1200px) {
+          height: 0px;
+        }
+        @media screen and (max-width: 850px) {
+          font-size: 14px;
+          @media screen and (max-width: 630px) {
+            width: 250px;
+            margin-left: 25px;
+          }
+        }
         i {
           justify-self: end;
           font-size: 56px;
+          @media screen and (max-width: 1200px) {
+            justify-self: start;
+            font-size: 40px;
+          }
+          @media screen and (max-width: 630px) {
+            font-size: 30px;
+          }
         }
         .fa-thumbs-up {
           margin-top: -15px;
@@ -40,6 +103,14 @@
       }
       &__text {
         font-size: 15px;
+        @media screen and (max-width: 850px) {
+          font-size: 12px;
+        }
+        @media screen and (max-width: 630px) {
+          font-size: 10px;
+          width: 220px;
+          text-align: center;
+        }
       }
     }
   }

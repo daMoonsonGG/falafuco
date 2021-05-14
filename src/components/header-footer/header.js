@@ -1,9 +1,26 @@
 import React, { Component } from "react";
-import { Link } from "react-scroll";
+
+import MobileLinks from "./mobile-links";
 
 import history from "../../history";
+import NavLinks from "./navlinks";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false,
+    };
+  }
+
+  makeItTrue = () => {
+    this.setState({ isOpen: true });
+  };
+
+  makeItFalse = () => {
+    this.setState({ isOpen: false });
+  };
   render() {
     return (
       <div className="header">
@@ -21,29 +38,15 @@ class Header extends Component {
           </a>
         </div>
         <div className="header__right-side">
-          <Link
-            to="services"
-            smooth={true}
-            duration={1000}
-            offset={-140}
-            className="header__right-side__servicios"
-            onClick={() => history.push("/")}
-          >
-            Servicios
-          </Link>
-          <a
-            className="header__right-side__planes"
-            onClick={() => history.push("/planes")}
-          >
-            Planes
-          </a>
-          <a
-            className="header__right-side__contacto"
-            onClick={() => history.push("/contacto")}
-          >
-            Contacto
-          </a>
+          {this.state.isOpen ? (
+            <MobileLinks handleClick={this.makeItFalse} />
+          ) : null}
+          <NavLinks />
         </div>
+        <i
+          onClick={this.state.isOpen ? this.makeItFalse : this.makeItTrue}
+          className="fas fa-bars"
+        ></i>
       </div>
     );
   }

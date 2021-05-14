@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Services extends Component {
   render() {
     return (
-      <div href="servicios" id="services" className="services">
+      <div id="services" className="services">
         <div className="services__title">
           <span>Reinventa la visibilidad digital de tu negocio</span>
         </div>

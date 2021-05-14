@@ -2,4 +2,10 @@
   grid-row: content-s/content-e;
   display: grid;
   grid-template-rows: [video-frame-s] 600px [video-frame-e presentation-s] 600px [presentation-e services-s] 780px [services-e plans-s] 980px [plans-e questions-s] 300px [questions-e];
+  @media screen and (max-width: 1200px) {
+    grid-template-rows: [video-frame-s] 600px [video-frame-e presentation-s] 600px [presentation-e services-s] 1250px [services-e plans-s] 980px [plans-e questions-s] 300px [questions-e];
+  }
+  @media screen and (max-width: 1100px) {
+    grid-template-rows: [video-frame-s] 600px [video-frame-e presentation-s] 600px [presentation-e services-s] 1250px [services-e plans-s] 2100px [plans-e questions-s] 300px [questions-e];
+  }
 }

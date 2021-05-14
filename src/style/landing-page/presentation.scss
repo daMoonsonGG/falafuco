@@ -3,6 +3,7 @@
   grid-row: presentation-s/presentation-e;
   display: grid;
   justify-items: center;
+
   &__text-group {
     width: 900px;
     height: 600px;
@@ -11,10 +12,34 @@
     display: grid;
     grid-template-rows: [title-s] 35px [title-e middle-s] 40px [middle-e last-s] 40px [last-e];
     grid-row-gap: 45px;
+    @media screen and (max-width: 951px) {
+      width: 600px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 641px) {
+      width: 500px;
+      font-size: 10px;
+    }
+    @media screen and (max-width: 541px) {
+      width: 250px;
+      font-size: 10px;
+    }
 
     &__title {
       font-size: 34px;
       color: $maincolor;
+      @media screen and (max-width: 951px) {
+        text-align: center;
+        font-size: 26px;
+      }
+      @media screen and (max-width: 641px) {
+        text-align: center;
+        font-size: 24px;
+      }
+      @media screen and (max-width: 541px) {
+        text-align: center;
+        font-size: 20px;
+      }
     }
     p {
       text-align: center;

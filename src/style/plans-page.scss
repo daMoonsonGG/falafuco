@@ -1,23 +1,28 @@
 .plans-page {
-  z-index: -1;
   width: 100vw;
   background-color: $background;
   grid-row: content-s/content-e;
   display: grid;
   justify-items: center;
   grid-template-rows: 80px [title-s] 60px [title-e text-s] 160px [text-e group-s] 680px [group-e btn-s] 100px [btn-e] 80px;
-  &__title {
-    grid-row: title-s/title-e;
-    color: $maincolor;
-    text-decoration: underline;
-    font-size: 34px;
-  }
-  &__text {
-    margin-top: 20px;
-    width: 60%;
-    grid-row: text-s/text-e;
+  &__top {
+    grid-row: title-s/text-e;
     text-align: center;
-    font-size: 15px;
+    &__title {
+      grid-row: title-s/title-e;
+      color: $maincolor;
+      text-decoration: underline;
+      font-size: 34px;
+    }
+    &__text {
+      margin-top: 20px;
+      grid-row: text-s/text-e;
+      font-size: 15px;
+      width: 1200px;
+      @media screen and (max-width: 1200px) {
+        width: 600px;
+      }
+    }
   }
   &__group {
     font-size: 20px;

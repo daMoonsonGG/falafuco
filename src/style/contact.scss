@@ -5,6 +5,9 @@
   display: grid;
   justify-items: center;
   grid-template-rows: 80px [title-s] 60px [title-e text-s] 80px [text-e bottom-s] 420px [bottom-e btn-s] 250px [btn-e];
+  @media screen and (max-width: 1500px) {
+    grid-template-rows: 80px [title-s] 60px [title-e text-s] 80px [text-e bottom-s] 1000px [bottom-e btn-s] 50px [btn-e];
+  }
   &__top {
     grid-row: title-s/text-e;
     text-align: center;
@@ -27,6 +30,11 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: [info-s] 800px [info-e form-s] 500px [form-e];
+    @media screen and (max-width: 1500px) {
+      grid-auto-flow: row;
+      grid-template-rows: [form-s] 800px [form-e info-s] 200px [info-e];
+      grid-template-columns: [info-s] 100vw [info-e form-s] 100vw [form-e];
+    }
     &__information {
       grid-column: info-s/info-e;
       margin-top: 50px;
@@ -37,17 +45,47 @@
       color: $maincolor;
       font-size: 20px;
       display: grid;
-
+      @media screen and (max-width: 1500px) {
+        grid-row: info-s/info-e;
+        grid-auto-flow: column;
+        grid-column-gap: 300px;
+        border-right: none;
+        border-top: 2px solid $maincolor;
+        width: 1200px;
+        height: 150px;
+      }
+      @media screen and (max-width: 1250px) {
+        width: 900px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 950px) {
+        width: 600px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 650px) {
+        width: 400px;
+        grid-column-gap: 100px;
+      }
+      @media screen and (max-width: 410px) {
+        width: 300px;
+        font-size: 10px;
+        grid-column-gap: 60px;
+      }
       .fas,
       .far {
         align-self: center;
         font-size: 28px;
         margin-right: 20px;
         margin-top: 50px;
+        @media screen and (max-width: 650px) {
+          font-size: 20px;
+        }
       }
       &__form {
         grid-column: form-s/form-e;
-        z-index: 0;
+        @media screen and (max-width: 1500px) {
+          grid-row: form-s/form-e;
+        }
       }
     }
   }

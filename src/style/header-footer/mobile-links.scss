@@ -1,0 +1,20 @@
+.mobile-links {
+  display: none;
+  @media screen and (max-width: 640px) {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  @media screen and (max-width: 450px) {
+    opacity: 0.7;
+    color: white;
+    background-color: $maincolor;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    padding: 30px;
+  }
+  @media screen and (max-width: 380px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

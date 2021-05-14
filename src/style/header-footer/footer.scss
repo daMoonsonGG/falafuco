@@ -9,6 +9,10 @@
   &__bottom {
     margin-left: 120px;
     margin-right: 120px;
+    @media screen and (max-width: 550px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
   &__line {
     border-bottom: 2px solid $textcolor;
@@ -23,6 +27,10 @@
       justify-self: end;
       span {
         margin-top: 3px;
+        @media screen and (max-width: 600px) {
+          color: transparent;
+          font-size: 1px;
+        }
       }
       a {
         font-size: 22px;

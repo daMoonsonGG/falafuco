@@ -11,6 +11,10 @@
     display: grid;
     grid-template-rows: [s] [e];
     grid-template-columns: 56px [logo-s] 65px [logo-e title-s] 165px [title-e];
+    @media screen and (max-width: 640px) {
+      width: 105px;
+      grid-template-columns: 20px [logo-s] 65px [logo-e title-s] 165px [title-e];
+    }
     &__logo {
       cursor: pointer;
       width: 45px;
@@ -27,6 +31,10 @@
       grid-row: s/e;
       font-size: 36px;
       font-family: "Roboto Slab", serif;
+      @media screen and (max-width: 640px) {
+        font-size: 0px;
+        width: 0px;
+      }
     }
   }
   &__right-side {
@@ -40,14 +48,31 @@
     color: $maincolor;
     display: grid;
     grid-auto-flow: column;
-
     a {
-      color: $maincolor;
       text-decoration: none;
       cursor: pointer;
+      @media screen and (max-width: 450px) {
+        color: white;
+      }
+      @media screen and (max-width: 380px) {
+        text-align: start;
+        font-size: 13px;
+      }
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+  .fas {
+    display: none;
+    @media screen and (max-width: 450px) {
+      color: $maincolor;
+      font-size: 40px;
+      display: flex;
+      position: absolute;
+      top: 2.5%;
+      right: 5%;
+      cursor: pointer;
     }
   }
 }

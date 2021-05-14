@@ -7,6 +7,7 @@ export class FormInput extends Component {
       <div className={`${className} form-input`}>
         <label className="form-input__label">{title}</label>
         <input
+          required
           className="form-input__input"
           type={type}
           placeholder={placeholder}
